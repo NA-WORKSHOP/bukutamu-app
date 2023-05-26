@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\BukuTamu;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +21,14 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        BukuTamu::create([
+            'nama' => "Lia",
+            'waktu' => "Jumat, 26 Mei 2023",
+            'asal' => "Kudus",
+            'keterangan' => "Konsultasi WIFI",
+            'kontak' => "08xxxxxx"
+        ]);
     }
+    
 }
